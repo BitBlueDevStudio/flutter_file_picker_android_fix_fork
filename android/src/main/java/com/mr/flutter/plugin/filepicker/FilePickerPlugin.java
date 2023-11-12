@@ -156,7 +156,7 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
 
         fileType = FilePickerPlugin.resolveType(call.method);
         String[] allowedExtensions = null;
-        boolean isDocumentType = false
+        boolean isDocumentType = false;
 
         try {
            isDocumentType = (boolean) arguments.get("isDocumentType");
