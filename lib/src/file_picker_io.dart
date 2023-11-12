@@ -31,6 +31,7 @@ class FilePickerIO extends FilePicker {
     bool? withData = false,
     bool? withReadStream = false,
     bool lockParentWindow = false,
+    bool isDocumentTypeAndroid = false,
     bool readSequential = false,
   }) =>
       _getPath(
@@ -41,6 +42,7 @@ class FilePickerIO extends FilePicker {
         onFileLoading,
         withData,
         withReadStream,
+        isDocumentTypeAndroid
       );
 
   @override
@@ -72,6 +74,7 @@ class FilePickerIO extends FilePicker {
     Function(FilePickerStatus)? onFileLoading,
     bool? withData,
     bool? withReadStream,
+    bool? isDocumentTypeAndroid,
   ) async {
     final String type = fileType.name;
     if (type != 'custom' && (allowedExtensions?.isNotEmpty ?? false)) {
@@ -91,6 +94,7 @@ class FilePickerIO extends FilePicker {
 
       final List<Map>? result = await _channel.invokeListMethod(type, {
         'allowMultipleSelection': allowMultipleSelection,
+        'isDocumentType': isDocumentTypeAndroid,
         'allowedExtensions': allowedExtensions,
         'allowCompression': allowCompression,
         'withData': withData,

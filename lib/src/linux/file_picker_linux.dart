@@ -17,6 +17,7 @@ class FilePickerLinux extends FilePicker {
     bool allowMultiple = false,
     bool withData = false,
     bool withReadStream = false,
+    bool isDocumentTypeAndroid = false,
     bool lockParentWindow = false,
     bool readSequential = false,
   }) async {
