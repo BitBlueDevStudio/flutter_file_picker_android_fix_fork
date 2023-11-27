@@ -189,7 +189,7 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
                 return "image/*";
             case "video":
                 return "video/*";
-            case "audioAndVideo":
+            case "audioAndVideoAndroidOnly":
                 return "audio/*,video/*";
             case "media":
                 return "image/*,video/*";
