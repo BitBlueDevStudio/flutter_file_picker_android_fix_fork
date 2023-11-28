@@ -184,7 +184,6 @@ class FilePickerWeb extends FilePicker {
         throw UnimplementedError();
       case FileType.anyAudioAndVideoAndroidOnly:
         throw UnimplementedError();
-        break;
     }
   }
 

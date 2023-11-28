@@ -166,7 +166,7 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
 
         if (fileType == null) {
             result.notImplemented();
-        } else if (fileType == "unmix_preset") {
+        } else if (fileType.equals("unmix_preset")) {
             isMultipleSelection = (boolean) arguments.get("allowMultipleSelection");
             withData = (boolean) arguments.get("withData");
             allowedExtensions = FileUtils.getUnmixPresetMimes();
