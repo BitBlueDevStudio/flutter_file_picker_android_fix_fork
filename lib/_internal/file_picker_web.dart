@@ -180,7 +180,9 @@ class FilePickerWeb extends FilePicker {
       case FileType.custom:
         return allowedExtensions!
             .fold('', (prev, next) => '${prev.isEmpty ? '' : '$prev,'} .$next');
-      case FileType.audioAndVideoAndroidOnly:
+      case FileType.unMixAudioVideoAndroidPreset0:
+        throw UnimplementedError();
+      case FileType.anyAudioAndVideoAndroidOnly:
         throw UnimplementedError();
         break;
     }

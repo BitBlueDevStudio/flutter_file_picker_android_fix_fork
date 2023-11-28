@@ -166,6 +166,10 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
 
         if (fileType == null) {
             result.notImplemented();
+        } else if (fileType == "unmix_preset") {
+            isMultipleSelection = (boolean) arguments.get("allowMultipleSelection");
+            withData = (boolean) arguments.get("withData");
+            allowedExtensions = FileUtils.getUnmixPresetMimes();
         } else if (fileType != "dir") {
             isMultipleSelection = (boolean) arguments.get("allowMultipleSelection");
             withData = (boolean) arguments.get("withData");
@@ -189,8 +193,10 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
                 return "image/*";
             case "video":
                 return "video/*";
-            case "audioAndVideoAndroidOnly":
+            case "anyAudioAndVideoAndroidOnly":
                 return "audio/*,video/*";
+            case "unMixAudioVideoAndroidPreset0":
+                return "unmix_preset";
             case "media":
                 return "image/*,video/*";
             case "any":

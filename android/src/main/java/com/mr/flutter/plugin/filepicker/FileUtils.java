@@ -68,6 +68,36 @@ public class FileUtils {
         return mimes.toArray(new String[0]);
     }
 
+    public static String[] getUnmixPresetMimes() {
+        final ArrayList<String> mimes = new ArrayList<>();
+
+        mimes.add("audio/mpeg");
+        mimes.add("audio/ogg");
+        mimes.add("video/mp4");
+        mimes.add("audio/flac");
+        mimes.add("audio/mpeg");
+        mimes.add("audio/aac");
+        mimes.add("video/webm");
+        mimes.add("audio/mpeg");
+        mimes.add("video/3gpp");
+        mimes.add("video/avi");
+        mimes.add("video/msvideo");
+        mimes.add("video/x-msvideo");
+        mimes.add("video/quicktime");
+        mimes.add("audio/amr");
+        mimes.add("audio/midi");
+
+        mimes.add("audio/x-aac");
+        mimes.add("audio/x-m4a");
+        mimes.add("audio/x-flac");
+        mimes.add("audio/x-wav");
+        mimes.add("audio/x-ac3");
+        mimes.add("audio/x-oggflac");
+
+        Log.d(TAG, "Preset file extensions mimes: " + mimes);
+        return mimes.toArray(new String[0]);
+    }
+
     public static String getFileName(Uri uri, final Context context) {
         String result = null;
 

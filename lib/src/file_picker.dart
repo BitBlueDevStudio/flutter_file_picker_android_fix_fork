@@ -17,7 +17,8 @@ enum FileType {
   image,
   video,
   audio,
-  audioAndVideoAndroidOnly,
+  anyAudioAndVideoAndroidOnly,
+  unMixAudioVideoAndroidPreset0,
   custom,
 }
 
