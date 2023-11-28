@@ -72,27 +72,44 @@ public class FileUtils {
         final ArrayList<String> mimes = new ArrayList<>();
 
         mimes.add("audio/mpeg");
-        mimes.add("audio/ogg");
-        mimes.add("video/mp4");
-        mimes.add("audio/flac");
-        mimes.add("audio/mpeg");
         mimes.add("audio/aac");
-        mimes.add("video/webm");
-        mimes.add("audio/mpeg");
-        mimes.add("video/3gpp");
-        mimes.add("video/avi");
-        mimes.add("video/msvideo");
-        mimes.add("video/x-msvideo");
-        mimes.add("video/quicktime");
+        mimes.add("audio/m4a");
+        mimes.add("audio/flac");
+        mimes.add("audio/wav");
+        mimes.add("audio/ogg");
+        mimes.add("audio/aiff");
         mimes.add("audio/amr");
         mimes.add("audio/midi");
+        mimes.add("audio/3gpp");
+        mimes.add("audio/3gpp2");
 
+        mimes.add("audio/x-mpeg");
         mimes.add("audio/x-aac");
         mimes.add("audio/x-m4a");
         mimes.add("audio/x-flac");
         mimes.add("audio/x-wav");
+        mimes.add("audio/x-ogg");
+        mimes.add("audio/x-aiff");
         mimes.add("audio/x-ac3");
         mimes.add("audio/x-oggflac");
+
+        mimes.add("video/mp4");
+        mimes.add("video/m4v");
+        mimes.add("video/msvideo");
+        mimes.add("video/3gpp");
+        mimes.add("video/3gpp2");
+        mimes.add("video/avi");
+        mimes.add("video/webm");
+        mimes.add("video/quicktime");
+
+        mimes.add("video/x-mp4");
+        mimes.add("video/x-m4v");
+        mimes.add("video/x-msvideo");
+
+        // mimes.add("video/flv");
+        // mimes.add("video/x-flv");
+        // mimes.add("video/x-ms-wmv");
+        // mimes.add("video/x-ms-wma");
 
         Log.d(TAG, "Preset file extensions mimes: " + mimes);
         return mimes.toArray(new String[0]);
