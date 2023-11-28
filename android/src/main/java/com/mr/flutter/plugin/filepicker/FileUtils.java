@@ -78,8 +78,8 @@ public class FileUtils {
         mimes.add("audio/wav");
         mimes.add("audio/ogg");
         // mimes.add("audio/aiff");
-        mimes.add("audio/amr");
-        mimes.add("audio/midi");
+        // mimes.add("audio/amr");
+        // mimes.add("audio/midi");
         mimes.add("audio/3gpp");
         mimes.add("audio/3gpp2");
 
