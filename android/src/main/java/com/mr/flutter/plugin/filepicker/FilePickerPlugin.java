@@ -170,6 +170,7 @@ public class FilePickerPlugin implements MethodChannel.MethodCallHandler, Flutte
             isMultipleSelection = (boolean) arguments.get("allowMultipleSelection");
             withData = (boolean) arguments.get("withData");
             allowedExtensions = FileUtils.getUnmixPresetMimes();
+            fileType = "*/*";
         } else if (fileType != "dir") {
             isMultipleSelection = (boolean) arguments.get("allowMultipleSelection");
             withData = (boolean) arguments.get("withData");
