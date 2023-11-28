@@ -77,10 +77,10 @@ public class FileUtils {
         mimes.add("audio/flac");
         mimes.add("audio/wav");
         mimes.add("audio/ogg");
+        mimes.add("audio/mp4");
         // mimes.add("audio/aiff");
         // mimes.add("audio/amr");
         // mimes.add("audio/midi");
-        mimes.add("audio/mp4");
         mimes.add("audio/3gpp");
         mimes.add("audio/3gpp2");
 
@@ -90,6 +90,7 @@ public class FileUtils {
         mimes.add("audio/x-flac");
         mimes.add("audio/x-wav");
         mimes.add("audio/x-ogg");
+        mimes.add("audio/x-mp4");
         // mimes.add("audio/x-aiff");
         mimes.add("audio/x-ac3");
         mimes.add("audio/x-oggflac");
